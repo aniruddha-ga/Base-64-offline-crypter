@@ -1,6 +1,6 @@
 # Base-64-offline
 
-For linux download linux code before running the code download python <br>
+For linux download python then download & run the linux code <br>
 <br>
 <code>
 sudo apt install python
