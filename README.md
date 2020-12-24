@@ -1,7 +1,7 @@
 # Base-64-offline
 
 For linux download python then download & run the linux code <br>
-<br>
+<br>Command To Install python<br>
 <code>
 sudo apt install python
 </code>
