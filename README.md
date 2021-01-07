@@ -8,3 +8,5 @@ sudo apt install python
 
 For Windows user just download from this link <br>
 goto release adnd tap on exe file or just tap on the exe file in the source then download
+
+![](screenshot.jpg)
