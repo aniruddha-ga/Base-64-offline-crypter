@@ -6,12 +6,20 @@ def encoder():
     stringname= namevalue.get()
     Utf_encode_first = stringname.encode('utf-8','strict')
     stringvalue = base64.b64encode(Utf_encode_first)
-    namevalue.set(stringvalue)
+    stringvalue = stringvalue.decode()
+    if(len(stringvalue) != 0):
+        namevalue.set(stringvalue)
+    else:
+        namevalue.set("Enter the String")
     
 def decoder():
     stringname= namevalue.get()
     stringvalue = base64.b64decode(stringname)
-    namevalue.set(stringvalue)
+    stringvalue = stringvalue.decode()
+    if(len(stringvalue) != 0):
+        namevalue.set(stringvalue)
+    else:
+        namevalue.set("Enter the String")
     
 root.geometry("1100x434")
 root.title("B64 Encoder and Decoder")
