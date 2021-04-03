@@ -3,8 +3,8 @@
 For linux download python then download & run the linux code <br>
 <br>Command To Install python<br>
 <code>
-sudo apt install python
- pip install tk
+sudo apt install python <br>
+pip install tk
 </code>
 
 For Windows user just download from  
