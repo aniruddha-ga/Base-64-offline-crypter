@@ -1,7 +1,7 @@
 # Base-64-offline
 
 For linux download python then download & run the linux code <br>
-<br>Command To Install python<br>
+<br>Command To Install python and Tkinter<br>
 
 sudo apt install python <br>
 pip install tk
