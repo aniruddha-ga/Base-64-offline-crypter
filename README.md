@@ -1,4 +1,4 @@
-# Base-64-offline
+# Base-64-offline-crypter
 
 For linux download python then download & run the linux code <br>
 <br>Command To Install python and Tkinter<br>
