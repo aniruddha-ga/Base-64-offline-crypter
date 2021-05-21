@@ -22,7 +22,7 @@ def decoder():
         namevalue.set("Enter the String")
     
 root.geometry("1100x434")
-root.title("B64 Encoder and Decoder")
+root.title("B64 Offline Crypter")
 root.wm_iconbitmap("C:/Users/user/Desktop/Python/encrypt.ico")
 root.configure(background="black")
 root.minsize(400,300)
