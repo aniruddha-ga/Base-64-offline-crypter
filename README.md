@@ -9,4 +9,4 @@ pip install tk
 For Windows user just download from  
  release and tap on exe file or just tap on the exe file in the source then download
 
-<img src="Screenshot.jpg" align="left" height="350" width="600" >
+<img src="Screenshot.jpg" align="left" height="350" width="700" >
