@@ -1,4 +1,5 @@
 from tkinter import *
+from tkinter import messagebox
 import base64
 global namevalue
 root = Tk()
@@ -37,12 +38,15 @@ def encoder():
     
 def decoder():
     stringname= namevalue.get()
-    stringvalue = base64.b64decode(stringname)
-    stringvalue = stringvalue.decode()
-    if(len(stringvalue) != 0):
-        namevalue.set(stringvalue)
-    else:
-        namevalue.set("Enter the String")
+    try:
+        stringvalue = base64.b64decode(stringname)
+        stringvalue = stringvalue.decode()
+        if(len(stringvalue) != 0):
+            namevalue.set(stringvalue)
+        else:
+            namevalue.set("Enter the String")
+    except:
+        messagebox.showinfo("Error", "Please Enter a proper base64 string")
     
 root.geometry("1100x434")
 root.title("B64 Crypter")
