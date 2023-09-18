@@ -5,7 +5,7 @@ For linux download python then download & run the linux code <br>
 
 sudo apt install python <br>
 
-`pip install tk ttk`
+`pip install tk ttk sv_ttk`
 
 `python Base64_offline.pyw`
 
