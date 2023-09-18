@@ -1,6 +1,9 @@
 from tkinter import *
+from tkinter import ttk
 from tkinter import messagebox
 import base64
+import sv_ttk
+
 global namevalue
 root = Tk()
 
@@ -54,18 +57,24 @@ root.configure(background="black")
 root.minsize(400,300)
 root.maxsize(3000,1600)
 root.iconbitmap(getPath("encrypt.ico"))
-Label(root, text="Base64 Crypter", font="comicsansms 60 bold",bg="black",fg="white", pady=15).pack()
-Label(root, text="Enter The Text", font="comicsansms 40 bold",bg="black",fg="white", pady=15).pack()
+sv_ttk.set_theme("dark")
+ttk.Style().configure("TButton", padding=25 , font=('Helvetica', 30),relief="flat")
+root.iconbitmap(getPath("encrypt.ico"))
+big_frame = ttk.Frame(root)
+big_frame.pack(fill="both", expand=True)
+
+
+Label(big_frame, text="Base64 Crypter", font="comicsansms 60 bold",bg="black",fg="white", pady=15).pack()
+Label(big_frame, text="Enter The Text", font="comicsansms 40 bold",bg="black",fg="white", pady=15).pack()
 namevalue = StringVar()
-nameentry = Entry(root, textvariable=namevalue,font="lucida 40 bold")
+nameentry = Entry(big_frame, textvariable=namevalue,font="lucida 40 bold")
 nameentry.pack()
 
-frame = Frame(root, borderwidth=6, bg="white",pady=6,padx=6, relief=SUNKEN)
-frame.pack()
-b1 = Button(frame, fg="green", text="crypt", command=encoder, font="lucida 35 bold")
+
+b1 = Button(big_frame, fg="green", text="crypt", command=encoder, font="lucida 35 bold")
 b1.pack(side=LEFT, padx=15)
-b2 = Button(frame, fg="red", text="decrypt", command=decoder, font="lucida 35 bold")
-b2.pack(padx=15)
+b2 = Button(big_frame, fg="red", text="decrypt", command=decoder, font="lucida 35 bold")
+b2.pack(side=RIGHT, padx=150)
 nameentry.update()
 Label(root, text=namevalue)
 root.mainloop()
