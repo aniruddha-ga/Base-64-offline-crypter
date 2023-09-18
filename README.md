@@ -19,4 +19,4 @@ To build the exe
 
 `pyinstaller --onefile --icon "encrypt.ico" --add-binary "encrypt.ico;." Base64_offline.pyw`
 
-<img src="Screenshot.jpg" align="left" height="300" width="650" >
+<img src="Screenshot.png" align="left" height="300" width="650" >
